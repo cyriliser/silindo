@@ -4,37 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- bootstrap css file -->
+    
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> 
-    <!-- custom styles file -->
+    
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>HTML CSS Javascript Challenge</title>
+    <title>Hickies Originals</title>
 </head>
-<!-- bg-primary sets the back ground color -->
-<body class="bg-primary">
-    <!--
-        w-50 sets the width
-        container gives a bit of padding between content and edges
-        pt-3 sets padding at the top
-        mx-auto centers the content by giving equal margin on the sides
 
-      -->
+<body class="bg-primary">
+    
     <div class="w-50 pt-3 container bg-white mx-auto">
         <div class="title">
             <H2 class="font-weight-bold" >HICKIES Originals</H2>
         </div>
-        <!-- 
-            row makes the div behave like a row with 12 columns that you can subdevide as you like
-         -->
+       
         <div class="row">
-            <!-- col-lg-2 this child is a column on large screens it takes up the width of 2 columns -->
-            <div class="col-lg-2">
-                stars
-            </div>
-            <!-- col-lg-3 this child is a column on large screens it takes up the width of 3 columns -->
+            
             <div class="col-lg-3">
-                <!-- text-secondary makes the text color grey -->
+          
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checekd"></span>
+                <span class="fa fa-star checekd"></span> 
+            </div>
+            
+            <div class="col-lg-3">
+               
                 <p class="text-secondary">1 293 reviews</p>
             </div>
         </div>
@@ -50,11 +48,7 @@
             <div class="picked-color">
                 <p class="font-weight-bold">COLOR: <span id="selected-color" class="font-weight-normal">Electric Red</span></p>
             </div>
-            <!-- 
-                d-flex does a similar job to row in that it helps in aligning content except that it dosent use columns 
-                flex-wrap makes the content wrap around to the next line like word wrap
-                my implementaion of the colors is a bit over engineered so you can do it your own way
-            -->
+            <!-- Aliginig the divs in row     -->
             <div class="colors d-flex flex-wrap ">
                 <div id="red" class="color-circle bg-red selected"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
                 <div id="green" class="color-circle bg-green"> <div class="outer-circle"> <div class="inner-circle"></div></div> </div>
@@ -80,10 +74,7 @@
         <p>Size Guide</p>
         <p>Your Custom Fit</p>
         <div class="row">
-            <!-- 
-                border creates a border 
-                border-dark sets the color
-             -->
+            <!--  creating a border -->
             <div class="col-lg-2 quantity-box pt-2 border border-dark text-center ml-3 my-2">
                 <h5 id="quantity m-0" >0</h5>
             </div>
@@ -101,17 +92,14 @@
                 <p>Add to Cart</p>
             </div>
         </div>
-        <!-- 
-            border-top creates a border on the top only
-            border-bottom creates a border on the bottom only
-         -->
+       
         <div class="py-4 px-2 my-3 border-top border-bottom border-dark ">
-            <!-- mb-0 removes margin at the bottom -->
+            
             <P class="mb-0">DETAILS</P>
         </div>
         <div>
-            <p>Need Help</p>
-            <p>Shopping & Returns</p>
+            <p>Need Help?</p>
+            <p>Shipping & Returns</p>
         </div>
 
     </div>
@@ -128,13 +116,7 @@
         <!-- copy these as they are -->
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <!-- commented these out because they are not part of the design but you can uncomment them and see what they do -->
-                <!-- <div class="modal-header"> -->
-                <!-- <h5 class="modal-title" id="exampleModalCenteredLabel">Modal title</h5> -->
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
-                    <!-- <span aria-hidden="true">×</span>
-                </button> -->
-                <!-- </div> -->
+               
                 <div class="modal-body">
                     <!-- 
                         w-100 sets width to 100% of its container
